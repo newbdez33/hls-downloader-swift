@@ -7,11 +7,28 @@
 //
 
 import UIKit
+import Tiercel
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    var sessionManager: SessionManager = {
+        SessionManager.logLevel = .none
+        var configuration = SessionConfiguration()
+        configuration.allowsCellularAccess = false
+        let manager = SessionManager("hls-downloader", configuration: configuration, operationQueue: DispatchQueue(label: "com.hls-downloader.SessionManager.operationQueue"))
+        return manager
+    }()
+    
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+        let downloadManagers = [sessionManager]
+        for manager in downloadManagers {
+            if manager.identifier == identifier {
+                manager.completionHandler = completionHandler
+                break
+            }
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

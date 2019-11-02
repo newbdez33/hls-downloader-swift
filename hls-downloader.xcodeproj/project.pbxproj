@@ -7,15 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85530AF6236D3A2B0083016D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85530AF5236D3A2B0083016D /* Player.swift */; };
+		85530AF8236D3A530083016D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85530AF7236D3A530083016D /* Utility.swift */; };
 		85CEEA1D236BB99500E9F0F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEEA1C236BB99500E9F0F7 /* AppDelegate.swift */; };
 		85CEEA1F236BB99500E9F0F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEEA1E236BB99500E9F0F7 /* SceneDelegate.swift */; };
 		85CEEA21236BB99500E9F0F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEEA20236BB99500E9F0F7 /* ContentView.swift */; };
 		85CEEA23236BB99600E9F0F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85CEEA22236BB99600E9F0F7 /* Assets.xcassets */; };
 		85CEEA26236BB99600E9F0F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85CEEA25236BB99600E9F0F7 /* Preview Assets.xcassets */; };
 		85CEEA29236BB99600E9F0F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CEEA27236BB99600E9F0F7 /* LaunchScreen.storyboard */; };
+		85CEEA41236BD19100E9F0F7 /* mamba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CEEA40236BD19100E9F0F7 /* mamba.framework */; };
+		85CEEA42236BD19100E9F0F7 /* mamba.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85CEEA40236BD19100E9F0F7 /* mamba.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		85CEEA46236BD30700E9F0F7 /* HLSDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEEA45236BD30700E9F0F7 /* HLSDownloader.swift */; };
+		85CEEA4B236C1B2400E9F0F7 /* Tiercel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CEEA4A236C1B2400E9F0F7 /* Tiercel.framework */; };
+		85CEEA4C236C1B2400E9F0F7 /* Tiercel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85CEEA4A236C1B2400E9F0F7 /* Tiercel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		85FC9130236D549200EABB51 /* GCDWebServers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FC912F236D549200EABB51 /* GCDWebServers.framework */; };
+		85FC9131236D549200EABB51 /* GCDWebServers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85FC912F236D549200EABB51 /* GCDWebServers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		85CEEA43236BD19100E9F0F7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				85FC9131236D549200EABB51 /* GCDWebServers.framework in Embed Frameworks */,
+				85CEEA42236BD19100E9F0F7 /* mamba.framework in Embed Frameworks */,
+				85CEEA4C236C1B2400E9F0F7 /* Tiercel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		85530AF5236D3A2B0083016D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		85530AF7236D3A530083016D /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		85CEEA19236BB99500E9F0F7 /* hls-downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hls-downloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CEEA1C236BB99500E9F0F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85CEEA1E236BB99500E9F0F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +51,10 @@
 		85CEEA25236BB99600E9F0F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		85CEEA28236BB99600E9F0F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85CEEA2A236BB99600E9F0F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85CEEA40236BD19100E9F0F7 /* mamba.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mamba.framework; path = Carthage/Build/iOS/mamba.framework; sourceTree = "<group>"; };
+		85CEEA45236BD30700E9F0F7 /* HLSDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLSDownloader.swift; sourceTree = "<group>"; };
+		85CEEA4A236C1B2400E9F0F7 /* Tiercel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tiercel.framework; path = Carthage/Build/iOS/Tiercel.framework; sourceTree = "<group>"; };
+		85FC912F236D549200EABB51 /* GCDWebServers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDWebServers.framework; path = Carthage/Build/iOS/GCDWebServers.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85FC9130236D549200EABB51 /* GCDWebServers.framework in Frameworks */,
+				85CEEA41236BD19100E9F0F7 /* mamba.framework in Frameworks */,
+				85CEEA4B236C1B2400E9F0F7 /* Tiercel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +76,7 @@
 			children = (
 				85CEEA1B236BB99500E9F0F7 /* hls-downloader */,
 				85CEEA1A236BB99500E9F0F7 /* Products */,
+				85CEEA3F236BD19100E9F0F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +91,7 @@
 		85CEEA1B236BB99500E9F0F7 /* hls-downloader */ = {
 			isa = PBXGroup;
 			children = (
+				85CEEA30236BCBD500E9F0F7 /* Classes */,
 				85CEEA1C236BB99500E9F0F7 /* AppDelegate.swift */,
 				85CEEA1E236BB99500E9F0F7 /* SceneDelegate.swift */,
 				85CEEA20236BB99500E9F0F7 /* ContentView.swift */,
@@ -63,6 +99,8 @@
 				85CEEA27236BB99600E9F0F7 /* LaunchScreen.storyboard */,
 				85CEEA2A236BB99600E9F0F7 /* Info.plist */,
 				85CEEA24236BB99600E9F0F7 /* Preview Content */,
+				85530AF5236D3A2B0083016D /* Player.swift */,
+				85530AF7236D3A530083016D /* Utility.swift */,
 			);
 			path = "hls-downloader";
 			sourceTree = "<group>";
@@ -75,6 +113,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		85CEEA30236BCBD500E9F0F7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				85CEEA45236BD30700E9F0F7 /* HLSDownloader.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		85CEEA3F236BD19100E9F0F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85FC912F236D549200EABB51 /* GCDWebServers.framework */,
+				85CEEA4A236C1B2400E9F0F7 /* Tiercel.framework */,
+				85CEEA40236BD19100E9F0F7 /* mamba.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +141,8 @@
 				85CEEA15236BB99500E9F0F7 /* Sources */,
 				85CEEA16236BB99500E9F0F7 /* Frameworks */,
 				85CEEA17236BB99500E9F0F7 /* Resources */,
+				85CEEA43236BD19100E9F0F7 /* Embed Frameworks */,
+				85CEEA44236BD1B300E9F0F7 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -141,13 +199,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		85CEEA44236BD1B300E9F0F7 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/mamba.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Tiercel.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/GCDWebServers.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		85CEEA15236BB99500E9F0F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85CEEA46236BD30700E9F0F7 /* HLSDownloader.swift in Sources */,
 				85CEEA1D236BB99500E9F0F7 /* AppDelegate.swift in Sources */,
+				85530AF8236D3A530083016D /* Utility.swift in Sources */,
 				85CEEA1F236BB99500E9F0F7 /* SceneDelegate.swift in Sources */,
+				85530AF6236D3A2B0083016D /* Player.swift in Sources */,
 				85CEEA21236BB99500E9F0F7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +373,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"hls-downloader/Preview Content\"";
 				DEVELOPMENT_TEAM = 72T2SXUWHC;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "hls-downloader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,6 +397,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"hls-downloader/Preview Content\"";
 				DEVELOPMENT_TEAM = 72T2SXUWHC;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "hls-downloader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

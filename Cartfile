@@ -1,0 +1,3 @@
+github "Comcast/mamba"
+github "Danie1s/Tiercel"
+github "swisspol/GCDWebServer" ~> 3.2.5
